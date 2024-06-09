@@ -1,0 +1,23 @@
+
+
+# MySQL connection
+spring:
+  application:
+    name: tech-device-management
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/device_management
+    username: root
+    password: 1234
+    # You can include additional properties if needed
+    # serverTimezone: UTC
+    # useSSL: false
+    # autoReconnect: true
+    devtools:
+      livereload:
+        enabled: true
+
+server:
+  port: 8000
